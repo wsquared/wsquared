@@ -18,6 +18,22 @@ email: willwin.wang@gmail.com
 # Flags below are optional
 #
 
+facebook:
+  app_id: 412434868921993
+
+twitter:
+  username: willwin_w
+
+author: Willwin Wang
+
+social:
+  name: Willwin Wang
+  links:
+    - https://twitter.com/willwin_w
+    - https://www.facebook.com/willwin.wang.5
+    - https://www.linkedin.com/in/willwin.wang
+    - https://github.com/wsquared
+
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
@@ -79,6 +95,8 @@ sass:
 gems:
   - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
+  - jekyll-seo-tag
+  - jekyll-gist
 
 # Exclude these files from your production _site
 exclude:
