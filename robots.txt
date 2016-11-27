@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /404
+
+Sitemap: http://www.willwinwang.com/sitemap.xml
+
