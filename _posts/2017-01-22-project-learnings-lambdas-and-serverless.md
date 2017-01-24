@@ -64,16 +64,13 @@ functions:
 
 When we redeployed our lambda, a new lambda was created. Unbeknown to us, there were two lambdas that did the same thing, but with different names.
 
-
 Both were listening to messages from the same SQS queue. The old lambda became known to us as the 'rogue' lambda.
 
 How did this 'rogue' lambda get its name?
 
-We develop our lambda to ignore a message that was future dated. When the message was in the past, the lambda moved the message from one SQS queue to another. The lambda was scheduled to receive messsages from the SQS queue every minute.
+We developed our lambda to ignore a message that was future dated. When the message was in the past, the lambda moved the message from one SQS queue to another. The lambda was scheduled to receive messsages from the SQS queue every minute.
 
 ![Future Dated Poller](https://raw.githubusercontent.com/wsquared/jekyll-now/master/images/2017-01-22%20Future%20dated%20poller.png)
-
-How did this cause an issue?
 
 We had unpredictable behaviour because there were now two lambdas receiving messages from the same queue. Although scheduled to run every minute, they started at different times.
 
